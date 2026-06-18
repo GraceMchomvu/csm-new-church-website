@@ -73,11 +73,11 @@ const communityMoments = [
 ];
 
 const heroImages = [
-  "/images/band.jpg",
-  "/images/prayer-2.jpg",
-  "/images/prayer-3.jpg",
-  "/images/church/praise-worship-1.jpg",
-  "/images/church/prayer-service-2.jpg",
+  "/images/IMG_0570.jpg",
+  "/images/IMG_0812.jpg",
+  "/images/IMG_1016.jpg",
+  "/images/IMG_1527.jpg",
+  "/images/IMG_1530.jpg",
 ];
 
 export default function Home() {
