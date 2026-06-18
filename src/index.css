@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 6% 98%;
+    --foreground: 24 10% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 24 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 10% 10%;
+    --primary: 173 80% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 6% 96%;
+    --secondary-foreground: 24 10% 10%;
+    --muted: 30 6% 96%;
+    --muted-foreground: 25 5% 45%;
+    --accent: 38 92% 43%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 346 77% 49%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 25 6% 90%;
+    --input: 25 6% 90%;
+    --ring: 173 80% 30%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 24 10% 10%;
+    --sidebar-primary: 173 80% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 6% 96%;
+    --sidebar-accent-foreground: 24 10% 10%;
+    --sidebar-border: 25 6% 90%;
+    --sidebar-ring: 173 80% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-cream text-stone-700 font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-shadow-hero {
+    text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  }
+  .text-shadow-sm {
+    text-shadow: 0 1px 8px rgba(0,0,0,0.3);
+  }
+  .community-photo-grid {
+    perspective: 1200px;
+  }
+  .community-photo-card {
+    transform-style: preserve-3d;
+  }
+  .community-photo-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(255,255,255,0.22);
+    border-radius: inherit;
+    pointer-events: none;
+  }
+  .community-photo-card--hero {
+    min-height: 340px;
+  }
+  .community-photo-card--tall {
+    min-height: 340px;
+  }
+  @media (min-width: 768px) {
+    .community-photo-card:hover {
+      transform: rotate(var(--tilt)) translateY(-6px);
+    }
+  }
+}
