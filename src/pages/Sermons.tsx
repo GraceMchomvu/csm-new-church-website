@@ -6,9 +6,9 @@ import ScrollReveal from '../components/ScrollReveal';
 import { socialLinks } from '../lib/churchData';
 
 const fallbackSermons = [
-  { title: "Latest Sunday Service", date: "Watch on YouTube", series: "YouTube", image: "/images/church/congregation-1.jpg", url: "https://www.youtube.com/live/8ROz31sOu1E?si=Jx4cngDoZxSkKTxN" },
-  { title: "Latest Prophetic Ministry", date: "Watch on YouTube", series: "YouTube", image: "/images/church/prophet-ministry-2.jpg", url: "https://www.youtube.com/live/YkenTxzYA8M?si=rDaCSsscXKEji3zQ" },
-  { title: "Latest Worship Service", date: "Watch on YouTube", series: "YouTube", image: "/images/church/praise-worship-1.jpg", url: "https://www.youtube.com/live/P2vtGjaRRLI?si=UvWi3iqXsnnp5aA8" },
+  { title: "Latest Sunday Service", date: "Watch on YouTube", series: "YouTube", image: "./images/church/congregation-1.jpg", url: "https://www.youtube.com/live/8ROz31sOu1E?si=Jx4cngDoZxSkKTxN" },
+  { title: "Latest Prophetic Ministry", date: "Watch on YouTube", series: "YouTube", image: "./images/church/prophet-ministry-2.jpg", url: "https://www.youtube.com/live/YkenTxzYA8M?si=rDaCSsscXKEji3zQ" },
+  { title: "Latest Worship Service", date: "Watch on YouTube", series: "YouTube", image: "./images/church/praise-worship-1.jpg", url: "https://www.youtube.com/live/P2vtGjaRRLI?si=UvWi3iqXsnnp5aA8" },
 ];
 
 export default function Sermons() {
@@ -28,7 +28,7 @@ export default function Sermons() {
             title: item.title,
             date: new Date(item.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
             series: 'YouTube',
-            image: item.thumbnail || item.enclosure?.link || "/images/church/congregation-1.jpg",
+            image: item.thumbnail || item.enclosure?.link || "./images/church/congregation-1.jpg",
             url: item.link || socialLinks.youtube,
           }));
 
@@ -49,7 +49,7 @@ export default function Sermons() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-      <PageHero eyebrow="Messages" title="Sermons & Teachings" backgroundImage="/images/worship-service-1.jpg" />
+      <PageHero eyebrow="Messages" title="Sermons & Teachings" backgroundImage="./images/worship-service-1.jpg" />
 
       <section className="bg-cream py-12 lg:py-16">
         <div className="max-w-[1200px] mx-auto px-4">

@@ -12,14 +12,14 @@ const ministries = [
 export default function Prophet() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-      <PageHero eyebrow="Leadership" title="Prophet Baraka David Ogillo" backgroundImage="/images/church/prophet-ministry-3.jpg" height="60vh" />
+      <PageHero eyebrow="Leadership" title="Prophet Baraka David Ogillo" backgroundImage="./images/church/prophet-ministry-3.jpg" height="60vh" />
 
       {/* Biography */}
       <section className="bg-cream py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid lg:grid-cols-[40%_60%] gap-10 items-start">
             <ScrollReveal>
-              <img src="/images/church/prophet-ministry-1.jpg" alt="Prophet Baraka David Ogillo" className="w-full max-w-sm mx-auto aspect-[3/4] object-cover rounded-xl shadow-elevated" />
+              <img src="./images/church/prophet-ministry-1.jpg" alt="Prophet Baraka David Ogillo" className="w-full max-w-sm mx-auto aspect-[3/4] object-cover rounded-xl shadow-elevated" />
             </ScrollReveal>
             <div>
               <ScrollReveal delay={0.1}>
@@ -84,9 +84,9 @@ export default function Prophet() {
           </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: "The Power of Persistent Prayer", date: "Watch on YouTube", image: "/images/church/prayer-service-1.jpg" },
-              { title: "Walking in Divine Favor", date: "Watch on YouTube", image: "/images/church/prophet-ministry-2.jpg" },
-              { title: "Breaking Strongholds", date: "Watch on YouTube", image: "/images/church/prophecy-service-1.jpg" },
+              { title: "The Power of Persistent Prayer", date: "Watch on YouTube", image: "./images/church/prayer-service-1.jpg" },
+              { title: "Walking in Divine Favor", date: "Watch on YouTube", image: "./images/church/prophet-ministry-2.jpg" },
+              { title: "Breaking Strongholds", date: "Watch on YouTube", image: "./images/church/prophecy-service-1.jpg" },
             ].map((v, i) => (
               <ScrollReveal key={v.title} delay={0.1 + i * 0.1}>
                 <div className="group cursor-pointer">

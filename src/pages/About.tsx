@@ -33,7 +33,7 @@ export default function About() {
       <PageHero
         eyebrow="About Us"
         title="Our Story & Mission"
-        backgroundImage="/images/congregation.jpg"
+        backgroundImage="./images/congregation.jpg"
         height="60vh"
       />
 
@@ -66,7 +66,7 @@ export default function About() {
               </ScrollReveal>
             </div>
             <ScrollReveal delay={0.2}>
-              <img src="/images/church/praise-worship-2.jpg" alt="CSM Worship" className="w-full rounded-xl shadow-elevated" />
+              <img src="./images/church/praise-worship-2.jpg" alt="CSM Worship" className="w-full rounded-xl shadow-elevated" />
             </ScrollReveal>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function About() {
           <ScrollReveal delay={0.2}>
             <div className="bg-white rounded-xl overflow-hidden shadow-card max-w-md mx-auto">
               <img
-                src="/images/church/prophet-ministry-1.jpg"
+                src="./images/church/prophet-ministry-1.jpg"
                 alt="Prophet Baraka David Ogillo"
                 className="w-full aspect-[3/4] object-cover"
               />

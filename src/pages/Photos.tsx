@@ -6,21 +6,21 @@ import PageHero from '../components/PageHero';
 import ScrollReveal from '../components/ScrollReveal';
 
 const galleryImages = [
-  { src: "/images/church/congregation-1.jpg", category: "Community", title: "Congregation" },
-  { src: "/images/church/congregation-2.jpg", category: "Community", title: "Church Family" },
-  { src: "/images/church/praise-worship-1.jpg", category: "Worship", title: "Praise and Worship" },
-  { src: "/images/church/praise-worship-2.jpg", category: "Worship", title: "Worship Ministry" },
-  { src: "/images/church/prayer-service-1.jpg", category: "Ministry", title: "Prayer Service" },
-  { src: "/images/church/prayer-service-2.jpg", category: "Ministry", title: "Prayer Gathering" },
-  { src: "/images/church/prophecy-service-1.jpg", category: "Ministry", title: "Prophetic Ministry" },
-  { src: "/images/church/prophet-ministry-1.jpg", category: "Ministry", title: "Prophet Baraka David Ogillo" },
-  { src: "/images/church/prophet-ministry-2.jpg", category: "Ministry", title: "Ministry Moment" },
-  { src: "/images/church/prophet-ministry-3.jpg", category: "Ministry", title: "Prophetic Service" },
-  { src: "/images/church/testimony-1.jpg", category: "Community", title: "Testimony Time" },
-  { src: "/images/church/testimony-2.jpg", category: "Community", title: "Testimony Moment" },
-  { src: "/images/church/testimony-3.jpg", category: "Events", title: "Special Gathering" },
-  { src: "/images/church/testimony-4.jpg", category: "Events", title: "Church Event" },
-  { src: "/images/church/testimony-5.jpg", category: "Community", title: "Ministry Testimony" },
+  { src: "./images/church/congregation-1.jpg", category: "Community", title: "Congregation" },
+  { src: "./images/church/congregation-2.jpg", category: "Community", title: "Church Family" },
+  { src: "./images/church/praise-worship-1.jpg", category: "Worship", title: "Praise and Worship" },
+  { src: "./images/church/praise-worship-2.jpg", category: "Worship", title: "Worship Ministry" },
+  { src: "./images/church/prayer-service-1.jpg", category: "Ministry", title: "Prayer Service" },
+  { src: "./images/church/prayer-service-2.jpg", category: "Ministry", title: "Prayer Gathering" },
+  { src: "./images/church/prophecy-service-1.jpg", category: "Ministry", title: "Prophetic Ministry" },
+  { src: "./images/church/prophet-ministry-1.jpg", category: "Ministry", title: "Prophet Baraka David Ogillo" },
+  { src: "./images/church/prophet-ministry-2.jpg", category: "Ministry", title: "Ministry Moment" },
+  { src: "./images/church/prophet-ministry-3.jpg", category: "Ministry", title: "Prophetic Service" },
+  { src: "./images/church/testimony-1.jpg", category: "Community", title: "Testimony Time" },
+  { src: "./images/church/testimony-2.jpg", category: "Community", title: "Testimony Moment" },
+  { src: "./images/church/testimony-3.jpg", category: "Events", title: "Special Gathering" },
+  { src: "./images/church/testimony-4.jpg", category: "Events", title: "Church Event" },
+  { src: "./images/church/testimony-5.jpg", category: "Community", title: "Ministry Testimony" },
 ];
 
 const filters = ["All", "Worship", "Events", "Community", "Ministry"];
@@ -35,7 +35,7 @@ export default function Photos() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-      <PageHero eyebrow="Gallery" title="Moments at CSM" backgroundImage="/images/church/congregation-2.jpg" />
+      <PageHero eyebrow="Gallery" title="Moments at CSM" backgroundImage="./images/church/congregation-2.jpg" />
 
       <section className="bg-cream py-12 lg:py-16">
         <div className="max-w-[1200px] mx-auto px-4">

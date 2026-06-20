@@ -28,56 +28,56 @@ const testimonials = [
 ];
 
 const fallbackSermons = [
-  { title: "Latest Sunday Service", date: "Watch on YouTube", image: "/images/church/congregation-1.jpg", url: "https://www.youtube.com/live/8ROz31sOu1E?si=Jx4cngDoZxSkKTxN" },
-  { title: "Latest Prophetic Ministry", date: "Watch on YouTube", image: "/images/church/prophet-ministry-2.jpg", url: "https://www.youtube.com/live/YkenTxzYA8M?si=rDaCSsscXKEji3zQ" },
-  { title: "Latest Worship Service", date: "Watch on YouTube", image: "/images/church/praise-worship-1.jpg", url: "https://www.youtube.com/live/P2vtGjaRRLI?si=UvWi3iqXsnnp5aA8" },
+  { title: "Latest Sunday Service", date: "Watch on YouTube", image: "./images/church/congregation-1.jpg", url: "https://www.youtube.com/live/8ROz31sOu1E?si=Jx4cngDoZxSkKTxN" },
+  { title: "Latest Prophetic Ministry", date: "Watch on YouTube", image: "./images/church/prophet-ministry-2.jpg", url: "https://www.youtube.com/live/YkenTxzYA8M?si=rDaCSsscXKEji3zQ" },
+  { title: "Latest Worship Service", date: "Watch on YouTube", image: "./images/church/praise-worship-1.jpg", url: "https://www.youtube.com/live/P2vtGjaRRLI?si=UvWi3iqXsnnp5aA8" },
 ];
 
 const communityMoments = [
   {
     title: "Worship",
     caption: "A house alive with praise",
-    image: "/images/church/praise-worship-2.jpg",
+    image: "./images/church/praise-worship-2.jpg",
     className: "community-photo-card community-photo-card--hero md:col-span-6 md:row-span-2",
   },
   {
     title: "Prayer",
     caption: "Families gathering in faith",
-    image: "/images/church/prayer-service-1.jpg",
+    image: "./images/church/prayer-service-1.jpg",
     className: "community-photo-card community-photo-card--tall md:col-span-3 md:row-span-2",
   },
   {
     title: "Testimonies",
     caption: "Stories of transformation",
-    image: "/images/church/testimony-1.jpg",
+    image: "./images/church/testimony-1.jpg",
     className: "community-photo-card community-photo-card--small md:col-span-3",
   },
   {
     title: "Fellowship",
     caption: "A community that feels like home",
-    image: "/images/church/congregation-2.jpg",
+    image: "./images/church/congregation-2.jpg",
     className: "community-photo-card community-photo-card--wide md:col-span-6",
   },
   {
     title: "Ministry",
     caption: "Moments of hope and healing",
-    image: "/images/church/prophecy-service-1.jpg",
+    image: "./images/church/prophecy-service-1.jpg",
     className: "community-photo-card community-photo-card--small md:col-span-3",
   },
   {
     title: "Joy",
     caption: "People growing together",
-    image: "/images/church/testimony-5.jpg",
+    image: "./images/church/testimony-5.jpg",
     className: "community-photo-card community-photo-card--small md:col-span-3",
   },
 ];
 
 const heroImages = [
-  "/images/IMG_0570.jpg",
-  "/images/IMG_0812.jpg",
-  "/images/IMG_1016.jpg",
-  "/images/IMG_1527.jpg",
-  "/images/IMG_1530.jpg",
+  "./images/IMG_0570.jpg",
+  "./images/IMG_0812.jpg",
+  "./images/IMG_1016.jpg",
+  "./images/IMG_1527.jpg",
+  "./images/IMG_1530.jpg",
 ];
 
 export default function Home() {
@@ -237,7 +237,7 @@ export default function Home() {
         const latest = (data.items || []).slice(0, 3).map((item: any) => ({
           title: item.title,
           date: new Date(item.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
-          image: item.thumbnail || item.enclosure?.link || "/images/church/congregation-1.jpg",
+          image: item.thumbnail || item.enclosure?.link || "./images/church/congregation-1.jpg",
           url: item.link || socialLinks.youtube,
         }));
 
@@ -553,7 +553,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <ScrollReveal>
               <div className="relative">
-                <img src="/images/church/prophet-ministry-3.jpg" alt="Prophet Baraka David Ogillo" className="w-full max-w-md mx-auto aspect-[4/5] object-cover rounded-xl" />
+                <img src="./images/church/prophet-ministry-3.jpg" alt="Prophet Baraka David Ogillo" className="w-full max-w-md mx-auto aspect-[4/5] object-cover rounded-xl" />
                 <div className="grid grid-cols-3 gap-4 mt-6 max-w-md mx-auto">
                   {[
                     { number: "15+", label: "Years of Ministry" },

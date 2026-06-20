@@ -27,7 +27,7 @@ const methods = [
 export default function Give() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-      <PageHero eyebrow="Partner With Us" title="Give to the Work of God" backgroundImage="/images/testimony.jpg" />
+      <PageHero eyebrow="Partner With Us" title="Give to the Work of God" backgroundImage="./images/testimony.jpg" />
 
       {/* Giving Options */}
       <section className="bg-cream py-16 lg:py-24">

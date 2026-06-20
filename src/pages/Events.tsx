@@ -9,7 +9,7 @@ export default function Events() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-      <PageHero eyebrow="Events" title="Upcoming Events" backgroundImage="/images/prayer-ministry.jpg" />
+      <PageHero eyebrow="Events" title="Upcoming Events" backgroundImage="./images/prayer-ministry.jpg" />
 
       <section className="bg-cream py-12 lg:py-16">
         <div className="max-w-[1200px] mx-auto px-4">

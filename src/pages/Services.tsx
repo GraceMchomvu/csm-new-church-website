@@ -53,7 +53,7 @@ const services = [
 export default function Services() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-      <PageHero eyebrow="Our Services" title="Join Us in Worship" backgroundImage="/images/worship-service-2.jpg" height="50vh" />
+      <PageHero eyebrow="Our Services" title="Join Us in Worship" backgroundImage="./images/worship-service-2.jpg" height="50vh" />
 
       <section className="bg-cream py-16 lg:py-24">
         <div className="max-w-[1000px] mx-auto px-4">

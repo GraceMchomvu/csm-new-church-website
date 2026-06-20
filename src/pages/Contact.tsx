@@ -24,7 +24,7 @@ export default function Contact() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-      <PageHero eyebrow="Get in Touch" title="Contact Us" backgroundImage="/images/prayer-1.jpg" />
+      <PageHero eyebrow="Get in Touch" title="Contact Us" backgroundImage="./images/prayer-1.jpg" />
 
       {/* Contact Info & Form */}
       <section className="bg-cream py-16 lg:py-24">
